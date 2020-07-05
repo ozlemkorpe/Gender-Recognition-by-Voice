@@ -4,11 +4,16 @@ clear
 %https://www.kaggle.com/primaryobjects/voicegender
 voicedata = readtable('voice.csv');
 
+% meanfreq: mean frequency (in kHz)
+% sd: standard deviation of frequency
+% median: median frequency (in kHz)
+% mode: mode frequency
+
 %---------------Check for missing values
 missings = sum(ismissing(voicedata));
 
 %---------------Classification with mean frequency, median value and mode value.
-classification_model = fitctree(voicedata, 'label~meanfreq+median+mode'); %Classification Model
+classification_model = fitctree(voicedata, 'label~meanfreq+median+mode+sd'); %Classification Model
 
 %--------------- Loop for calculating average accuracy
 general_accuracy = 0;
