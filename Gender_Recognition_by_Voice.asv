@@ -6,28 +6,27 @@ clear
 %https://www.kaggle.com/primaryobjects/voicegender
 voicedata = readtable('voice.csv');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%VOICE PART%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %---------------Read Test Voice
-% [audioIn,Fs] = audioread('sample.m4a');
-% 
-% %Play audio
-% % sound(audioIn,Fs);
-% 
-% timeVector = (1/Fs) * (0:size(audioIn,1)-1);
-% figure
-% plot(timeVector,audioIn) 
-% ylabel("Amplitude")
-% xlabel("Time (s)")
-% title("Sample Audio")
-% grid on
-% 
-% % Detect speech
-% %speechIndices = detectSpeech(audioIn,Fs);
-% 
-% % Freq
-% freq = meanfreq(audioIn);
-% med = median(audioIn);
-% mod = mode(audioIn);
-% stddev = std(audioIn);
+%---------------Read Test Voice
+[audioIn,Fs] = audioread('sample.m4a');
+
+%Play audio
+% sound(audioIn,Fs);
+
+timeVector = (1/Fs) * (0:size(audioIn,1)-1);
+figure
+plot(timeVector,audioIn)
+ylabel("Amplitude")
+xlabel("Time (s)")
+title("Sample Audio")
+grid on
+
+% Detect speech
+%speechIndices = detectSpeech(audioIn,Fs);
+
+% Freq
+freq = meanfreq(audioIn);
+med = median(audioIn);
+mod = mode(audioIn)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
