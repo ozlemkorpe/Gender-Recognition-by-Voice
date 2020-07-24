@@ -1,6 +1,6 @@
 # Gender-Recognition-by-Voice
 
-Project aims to predict the gender of participants based on a set of data.
+Project aims to predict the gender of participants based on a set of data by using Signal Processing and Machine Learning Toolboxes.
 
 ## Training Data
 Training data can be found at:
