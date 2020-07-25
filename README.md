@@ -21,6 +21,11 @@ This part handles the user interactions with GUI which enables recording audio, 
 
 ![GUI](https://github.com/ozlemkorpe/Gender-Recognition-by-Voice/blob/master/screenshots/plot.png)
 
+## TODO
+- Fix play button function.
+- Calculation of frequency, mode, median and standart deviation.
+- Store measurement in a table to perform prediction.
+- Fill the prediction button push method in GUI
 
 ## Authors
 * **Özlem Körpe** - *Initial work* - [ozlemkorpe](https://github.com/ozlemkorpe)
